@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Opportunities</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Caveat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <p class="site-logo">shae</p>
+    <nav class="site-nav">
+      <a href="#" class="nav-pill nav-pill-active">Projects</a>
+      <a href="#" class="nav-pill">About Me</a>
+      <a href="#" class="nav-pill">Resume</a>
+    </nav>
+  </header>
+
+  <!-- Side Navigation -->
+  <!-- Nav Tooltip -->
+  <div class="nav-tooltip" id="navTooltip">
+    <p class="nav-tooltip-text">Skip to any section here →</p>
+    <button class="nav-tooltip-close" id="navTooltipClose" aria-label="Close tooltip">✕</button>
+  </div>
+
+  <nav class="side-nav" id="sideNav">
+    <div class="nav-lines">
+      <span class="nav-line" data-section="section-1"></span>
+      <span class="nav-line" data-section="section-2"></span>
+      <span class="nav-line" data-section="section-3"></span>
+      <span class="nav-line" data-section="section-4"></span>
+      <span class="nav-line" data-section="section-5"></span>
+      <span class="nav-line" data-section="section-6"></span>
+      <span class="nav-line" data-section="section-7"></span>
+      <span class="nav-line" data-section="section-8"></span>
+      <span class="nav-line" data-section="section-9"></span>
+      <span class="nav-line" data-section="section-10"></span>
+      <span class="nav-line" data-section="section-11"></span>
+      <span class="nav-line" data-section="section-12"></span>
+      <span class="nav-line" data-section="section-13"></span>
+    </div>
+
+    <div class="nav-popup" id="navPopup">
+      <a href="#section-1" class="nav-popup-item" data-section="section-1">Context</a>
+      <a href="#section-2" class="nav-popup-item" data-section="section-2">Question</a>
+      <a href="#section-3" class="nav-popup-item" data-section="section-3">Exploration</a>
+      <a href="#section-4" class="nav-popup-item" data-section="section-4">Insight</a>
+      <a href="#section-5" class="nav-popup-item" data-section="section-5">Direction</a>
+      <a href="#section-6" class="nav-popup-item" data-section="section-6">Strategy</a>
+      <a href="#section-7" class="nav-popup-item" data-section="section-7">Core Design Philosophy</a>
+      <a href="#section-8" class="nav-popup-item" data-section="section-8">User Flow</a>
+      <a href="#section-9" class="nav-popup-item" data-section="section-9">Lo-fi Prototype</a>
+      <a href="#section-10" class="nav-popup-item" data-section="section-10">Iteration</a>
+      <a href="#section-11" class="nav-popup-item" data-section="section-11">Design System</a>
+      <a href="#section-12" class="nav-popup-item" data-section="section-12">Final Product</a>
+      <a href="#section-13" class="nav-popup-item" data-section="section-13">Closing Reflection</a>
+    </div>
+  </nav>
+
+  <!-- Hero Image -->
+  <div class="hero-image">
+    <img src="images/Frame 1000006307.png" alt="StepUp app screens showcase">
+  </div>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-left">
+      <h1 class="hero-title">StepUp</h1>
+      <p class="hero-description">Most people know prolonged sitting is harmful—yet they still struggle to move. StepUp explores why awareness doesn't lead to action, and how small, everyday movements can be designed into habits.</p>
+    </div>
+    <div class="hero-right">
+      <div class="hero-meta">
+        <p class="hero-meta-label">Role:</p>
+        <p class="body-text">Product Designer</p>
+      </div>
+      <div class="hero-meta">
+        <p class="hero-meta-label">Timeline:</p>
+        <p class="body-text">Jan-Feb 2023</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section 1: Context -->
+  <section class="section" id="section-1">
+    <div class="content-wrapper">
+      <h2 class="subtitle">Context</h2>
+
+      <div class="section-body">
+        <h3 class="title">
+          Prolonged sitting is a silent but normalized health risk among students and young professionals
+        </h3>
+
+        <div class="img-placeholder">
+          <span class="placeholder-label">illustration — sedentary lifestyle scene</span>
+        </div>
+
+        <div class="pill-cards pill-cards-vertical">
+          <div class="pill-card"><span class="card-emoji">💬</span><strong>Sitting all day became his normal</strong> — This project started from someone very close to me—my boyfriend. During his student years, he spent long hours sitting due to <mark>academic pressure and job hunting</mark>. Over time, he began experiencing persistent discomfort in his neck and lower back. At first, it felt like a common consequence of studying hard—almost something to tolerate.</div>
+          <div class="pill-card"><span class="card-emoji">🔍</span><strong>A personal problem, a universal risk</strong> — But as I looked deeper, I realized this was part of a much larger issue. Prolonged sitting is not only linked to temporary discomfort, but also to <mark>long-term health risks</mark> such as cardiovascular disease, diabetes, and spinal issues.</div>
+        </div>
+
+        <p class="body-text">
+          The "solution" seemed obvious at first: <span class="callout">just exercise more.</span> But reality didn't match this assumption. Even when he understood the importance of movement, he <strong>struggled to start</strong> and even more to sustain it. That contradiction stayed with me.
+        </p>
+      </div>
+
+      <div class="section-aside">
+        <div class="aside-placeholder">
+          <span class="placeholder-label">health risk data</span>
+        </div>
+        <p class="aside-caption">Studies show that sitting for more than 8 hours a day significantly increases health risks.</p>
+
+        <div class="aside-placeholder">
+          <span class="placeholder-label">photo / sketch</span>
+        </div>
+        <p class="aside-caption">Early observations from daily routines that sparked the project.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Question -->
+  <section class="section" id="section-2">
+    <div class="content-wrapper">
+      <h2 class="subtitle">Question</h2>
+
+      <div class="section-body">
+        <h3 class="title">
+          If people already know sitting is harmful, why is it still so hard to change behavior?
+        </h3>
+        <div class="body-text">
+          <p>I began noticing similar patterns around me. Many students and peers: sit for long hours in classrooms or at desks, remain sedentary during breaks (scrolling, gaming, watching videos), and experience physical discomfort—some occasional, some persistent. What stood out was not ignorance—but awareness without action. This challenged my initial belief that education alone could solve the problem.</p>
+          <blockquote><strong>Why do people fail to act even when they already know what is good for them?</strong></blockquote>
+          <p>This question became the starting point of my exploration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Exploration -->
+  <section class="section" id="section-3">
+    <div class="content-wrapper">
+      <h2 class="subtitle">Exploration</h2>
+
+      <div class="section-body">
+        <h3 class="title">
+          Initial assumptions pointed to time, motivation, and resources—but reality was more complex
+        </h3>
+
+        <p class="body-text">Like many people, I first turned to online research. The most common explanations were:</p>
+
+        <div class="pill-cards pill-cards-3">
+          <div class="pill-card"><span class="card-emoji">⏳</span>lack of time</div>
+          <div class="pill-card"><span class="card-emoji">🔥</span>lack of motivation</div>
+          <div class="pill-card"><span class="card-emoji">💰</span>lack of financial access</div>
+        </div>
+
+        <p class="body-text">At first glance, these felt reasonable. I even tried to reason through them myself: If people had more time, would they move more? If motivation improved, would behavior change last? If access to gyms or tools increased, would consistency follow?</p>
+
+        <p class="body-text"><strong>But something about these answers felt incomplete.</strong> They explained barriers on the surface—but not why people still failed even when those barriers were reduced.</p>
+
+        <div class="img-placeholder">
+          <span class="placeholder-label">illustration — assumptions vs. reality</span>
+        </div>
+
+        <p class="body-text">So I decided to test these assumptions directly. I conducted <strong>six one-on-one interviews</strong> with people who identified as having sedentary lifestyles. Instead of focusing on what they <em>knew</em>, I focused on what they <em>actually did</em>—and more importantly, what they <em>failed to do despite intending to act</em>.</p>
+
+        <p class="body-text">I wasn't just listening for answers. I was looking for contradictions. And I found them.</p>
+
+        <div class="img-placeholder">
+          <span class="placeholder-label">photo — affinity map / interview findings</span>
+        </div>
+      </div>
+
+      <div class="section-aside">
+        <div class="aside-placeholder">
+          <span class="placeholder-label">research method</span>
+        </div>
+        <p class="aside-caption">Interview structure and participant selection criteria.</p>
+
+        <div class="aside-placeholder">
+          <span class="placeholder-label">interview notes</span>
+        </div>
+        <p class="aside-caption">Key quotes and patterns from the 6 interviews.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Insight -->
+  <section class="section" id="section-4">
+    <div class="content-wrapper">
+      <h2 class="subtitle">Insight</h2>
+
+      <div class="section-body">
+        <h3 class="title">
+          The real barrier is not external constraints, but internalized habits and behavioral defaults
+        </h3>
+        <p class="body-text">
+          This is where my understanding began to shift.
+        </p>
+
+        <div class="insight-card">
+          <span class="card-emoji">⏰</span>
+          <p class="insight-card-title">Insight 1 — Time is not the real constraint; habit is the default driver of behavior</p>
+          <p class="insight-card-text">At first glance, time appeared to be the limiting factor. But interviews showed a different pattern: People who are naturally active still move even when busy, people who are sedentary remain inactive even when they have free time. This made something very clear: <mark>Behavior is not shaped by available time, but by what has become the default habit.</mark></p>
+        </div>
+
+        <div class="insight-card">
+          <span class="card-emoji">⚡</span>
+          <p class="insight-card-title">Insight 2 — Motivation triggers action, but cannot sustain it</p>
+          <p class="insight-card-text">Many participants described starting with motivation—but not maintaining it. Motivation: appears inconsistently, fades quickly, is easily replaced by more immediate or enjoyable alternatives. This reframed my thinking: <mark>Motivation is not a system—it is a spark.</mark></p>
+        </div>
+
+        <div class="insight-card">
+          <span class="card-emoji">🌍</span>
+          <p class="insight-card-title">Insight 3 — Environment shapes behavior more than access or affordability</p>
+          <p class="insight-card-text">I initially assumed resources like gyms or equipment would matter more. But what actually mattered was: whether movement felt naturally supported in daily context, whether the environment made inactivity the easier option. This shifted my perspective: <mark>The key is not providing tools—but designing for context.</mark></p>
+        </div>
+
+        <div class="insight-card">
+          <span class="card-emoji">🧭</span>
+          <p class="insight-card-title">Insight 4 — People struggle not because they lack goals, but because they lack actionable clarity</p>
+          <p class="insight-card-text">Many users had the desire to be active. But they struggled at the moment of action because:</p>
+          <ul class="insight-card-list">
+            <li>they didn't know what to do</li>
+            <li>they didn't know how to start</li>
+            <li>they couldn't connect intention to immediate behavior</li>
+          </ul>
+          <p class="insight-card-text">This became a critical realization: <mark>Without clear "what" and "how," intention collapses.</mark></p>
+        </div>
+
+        <p class="body-text">
+          At this point, I realized my initial assumptions—time, motivation, resources—were not wrong, but incomplete. <strong>They described symptoms, not structure.</strong> So I reframed the problem again.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Direction -->
+  <section class="section" id="section-5">
+    <div class="content-wrapper">
+      <h2 class="subtitle">Direction</h2>
+
+      <div class="section-body">
+        <h3 class="title">
+          Design should focus on making action immediate, contextual, and easier than inaction
+        </h3>
+        <div class="body-text">
+          <p>The question evolved into:</p>
+          <blockquote><strong>How might we help people shift from sedentary behavior to active behavior without relying on motivation?</strong></blockquote>
+          <p>From the insights, I identified four key design directions:</p>
+        </div>
+
+        <div class="insight-card">
+          <span class="card-emoji">🔔</span>
+          <p class="insight-card-title">1. From awareness to action: users need reminders that include "what to do next"</p>
+          <p class="insight-card-text">People are already aware of sedentary risks. What they lack is not awareness—but direction in the moment. So reminders must become: contextual, actionable, immediately usable. Not just "you've been sitting too long," but: <mark>"here's something simple you can do right now."</mark></p>
+        </div>
+
+        <div class="insight-card">
+          <span class="card-emoji">🤸</span>
+          <p class="insight-card-title">2. From rigid exercise to flexible movement choices</p>
+          <p class="insight-card-text">People are more likely to act when options: fit their current context, require minimal preparation, feel easy to start immediately. Diversity in movement lowers psychological resistance.</p>
+        </div>
+
+        <div class="insight-card">
+          <span class="card-emoji">🪞</span>
+          <p class="insight-card-title">3. From task-based exercise to habit-based identity</p>
+          <p class="insight-card-text">This was a major shift in my thinking. Instead of designing for: <mark>"help users exercise more"</mark> I started designing for: <mark>"help users become someone who naturally stays active"</mark></p>
+        </div>
+
+        <div class="insight-card">
+          <span class="card-emoji">💛</span>
+          <p class="insight-card-title">4. From pressure to support: reducing emotional friction is essential</p>
+          <p class="insight-card-text">I noticed emotional barriers often come before physical ones: guilt from past failure, anxiety about long-term health, frustration from inconsistency. These emotions quietly reduce the likelihood of starting again. So the design must also: <mark>reduce emotional resistance, not just physical effort.</mark></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Strategy -->
+  <section class="section" id="section-6">
+    <div class="content-wrapper">
+      <h2 class="subtitle">Strategy</h2>
+
+      <div class="section-body">
+        <h3 class="title">
+          StepUp turns movement into small, frequent, low-friction actions embedded in daily life
+        </h3>
+        <p class="body-text">Based on these directions, I explored concepts centered around a mobile experience—because it is already deeply integrated into users' daily routines. Early concepts included:</p>
+
+        <div class="pill-cards">
+          <div class="pill-card"><span class="card-emoji">📲</span>smart notifications that respond to inactivity</div>
+          <div class="pill-card"><span class="card-emoji">🃏</span>quick-switch activity cards for immediate decisions</div>
+          <div class="pill-card"><span class="card-emoji">👓</span>AR-based movement guidance</div>
+          <div class="pill-card"><span class="card-emoji">🎙️</span>real-time voice feedback during activities</div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="body-text">
+          <p>But I stepped back and asked a more important question: <span class="callout">What should the system fundamentally optimize for?</span></p>
+          <p>The answer became clear: frequency over intensity, immediacy over planning, integration over separation.</p>
+        </div>
+
+        <hr class="divider">
+
+        <p class="body-text">So StepUp is designed around a habit-building loop:</p>
+
+        <div class="pill-cards">
+          <div class="pill-card"><span class="card-emoji">🔔</span><strong>Trigger:</strong> contextual reminders based on inactivity</div>
+          <div class="pill-card"><span class="card-emoji">🏃</span><strong>Action:</strong> short, effortless movement suggestions</div>
+          <div class="pill-card"><span class="card-emoji">🎉</span><strong>Reward:</strong> immediate feedback and satisfaction</div>
+          <div class="pill-card"><span class="card-emoji">🔁</span><strong>Reinforcement:</strong> repeated success builds identity</div>
+        </div>
+
+        <hr class="divider">
+
+        <p class="body-text">This led to a core shift in the product philosophy: The goal is no longer to complete workouts. The goal is to build identity: "I am someone who stays active."</p>
+
+        <hr class="divider">
+
+        <p class="body-text">From this strategy, features emerged directly:</p>
+
+        <div class="pill-cards">
+          <div class="pill-card"><span class="card-emoji">🎯</span><strong>Personalized activity filters</strong> — based on physical discomfort or context</div>
+          <div class="pill-card"><span class="card-emoji">🗺️</span><strong>Contextual guidance</strong> — clear "what to do next" in the moment</div>
+          <div class="pill-card"><span class="card-emoji">☀️</span><strong>Routine-aware suggestions</strong> — embedded in daily behavior patterns</div>
+          <div class="pill-card"><span class="card-emoji">🌱</span><strong>Low-pressure progress system</strong> — remove guilt and over-complex goals</div>
+          <div class="pill-card"><span class="card-emoji">✨</span><strong>Simplified interaction</strong> — reduce decision fatigue, prioritize action</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: Core Design Philosophy -->
+  <section class="section" id="section-7">
+    <div class="content-wrapper">
+      <h2 class="subtitle">Core Design Philosophy</h2>
+
+      <div class="section-body">
+        <div class="pill-cards pill-cards-3">
+          <div class="pill-card"><span class="card-emoji">🚀</span><strong>Easy to start</strong> — Lower the barrier so users can begin without overthinking</div>
+          <div class="pill-card"><span class="card-emoji">⏱️</span><strong>Short duration</strong> — Keep activities brief enough to fit any moment</div>
+          <div class="pill-card"><span class="card-emoji">🔁</span><strong>High frequency</strong> — Encourage many small actions over one big effort</div>
+          <div class="pill-card"><span class="card-emoji">✨</span><strong>Reduce friction</strong> — Remove every unnecessary step between intention and action</div>
+          <div class="pill-card"><span class="card-emoji">☀️</span><strong>Embed into daily routines</strong> — Attach movement to habits users already have</div>
+          <div class="pill-card"><span class="card-emoji">🌱</span><strong>Reinforce identity through repetition</strong> — Build the feeling of being someone who moves</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 8: User Flow -->
+  <section class="section section-visual" id="section-8">
+    <div class="content-wrapper">
+      <h2 class="subtitle">User Flow</h2>
+      <div class="section-body">
+        <div class="img-placeholder img-placeholder-large">
+          <span class="placeholder-label">user flow diagram</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 9: Lo-fi Prototype -->
+  <section class="section section-visual" id="section-9">
+    <div class="content-wrapper">
+      <h2 class="subtitle">Lo-fi Prototype</h2>
+      <div class="section-body">
+        <div class="img-placeholder img-placeholder-large">
+          <span class="placeholder-label">lo-fi wireframes / prototype screens</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 10: Iteration -->
+  <section class="section section-visual" id="section-10">
+    <div class="content-wrapper">
+      <h2 class="subtitle">Iteration</h2>
+      <div class="section-body">
+        <div class="img-placeholder img-placeholder-large">
+          <span class="placeholder-label">iteration comparison — before & after</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 11: Design System -->
+  <section class="section section-visual" id="section-11">
+    <div class="content-wrapper">
+      <h2 class="subtitle">Design System</h2>
+      <div class="section-body">
+        <div class="img-placeholder img-placeholder-large">
+          <span class="placeholder-label">design system — colors, typography, components</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 12: Final Product -->
+  <section class="section section-visual" id="section-12">
+    <div class="content-wrapper">
+      <h2 class="subtitle">Final Product</h2>
+      <div class="section-body">
+
+        <!-- Feature 1: phone left, text right -->
+        <div class="feature-row">
+          <div class="feature-phone">
+            <div class="phone-placeholder">
+              <span class="placeholder-label">phone mockup — habit-building loop</span>
+            </div>
+          </div>
+          <div class="feature-text">
+            <p class="feature-label">Fully immerse in habit-building</p>
+            <h3 class="feature-title">Start from a small habit-building loop!</h3>
+            <p class="body-text">Establishing a long-term habit often feels challenging, but we help users start being active by completing small loops.</p>
+            <ul class="body-text">
+              <li>Sedentary reminder</li>
+              <li>Real-time guide (video, voice, text)</li>
+              <li>Timely feedback</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 2: text left, phone right -->
+        <div class="feature-row">
+          <div class="feature-text">
+            <p class="feature-label">Speed start & Simple operation</p>
+            <h3 class="feature-title">Get your body moving as quickly as possible!</h3>
+            <p class="body-text">Set goals? Input information? No! Users simply need to choose their preferred exercise and press the start button to get moving.</p>
+            <ul class="body-text">
+              <li>Switchable activity cards</li>
+              <li>Video preview</li>
+              <li>Filter (duration, location, etc.)</li>
+            </ul>
+          </div>
+          <div class="feature-phone">
+            <div class="phone-placeholder">
+              <span class="placeholder-label">phone mockup — quick start</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3: phone left, text right -->
+        <div class="feature-row">
+          <div class="feature-phone">
+            <div class="phone-placeholder">
+              <span class="placeholder-label">phone mockup — feature 3</span>
+            </div>
+          </div>
+          <div class="feature-text">
+            <p class="feature-label">Feature 3 label</p>
+            <h3 class="feature-title">Feature 3 title placeholder</h3>
+            <p class="body-text">Feature 3 description placeholder.</p>
+            <ul class="body-text">
+              <li>Detail 1</li>
+              <li>Detail 2</li>
+              <li>Detail 3</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 13: Closing Reflection -->
+  <section class="section" id="section-13">
+    <div class="content-wrapper">
+      <h2 class="subtitle">Closing Reflection</h2>
+
+      <div class="section-body">
+        <h3 class="title">
+          This project shifted from designing exercise tools to designing behavioral change systems
+        </h3>
+        <p class="body-text">What changed most throughout this project was not the solution—but my understanding of the problem itself.</p>
+
+        <div class="contrast-cards">
+          <div class="contrast-card contrast-before">
+            <span class="card-emoji">💭</span>
+            <p class="contrast-label">I started with:</p>
+            <p class="contrast-quote">"How do we make people exercise more?"</p>
+          </div>
+          <div class="contrast-arrow">→</div>
+          <div class="contrast-card contrast-after">
+            <span class="card-emoji">💡</span>
+            <p class="contrast-label">I ended with:</p>
+            <p class="contrast-quote">"How do we make movement the easiest and most natural choice in daily life?"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p class="footer-text">I am happy to meet you :)</p>
+    <div class="footer-links">
+      <a href="#" class="footer-link">Linkedin</a>
+      <a href="#" class="footer-link">Instagram</a>
+      <a href="#" class="footer-link">Email</a>
+    </div>
+  </footer>
+
+  <script>
+    // Nav tooltip
+    const navTooltip = document.getElementById('navTooltip');
+    const navTooltipClose = document.getElementById('navTooltipClose');
+    navTooltipClose.addEventListener('click', () => {
+      navTooltip.classList.add('hidden');
+    });
+
+    // Highlight active section on scroll
+    const sections = document.querySelectorAll('.section');
+    const navLines = document.querySelectorAll('.nav-line');
+    const navPopupItems = document.querySelectorAll('.nav-popup-item');
+
+    function updateActiveSection() {
+      let currentId = '';
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 200) {
+          currentId = section.id;
+        }
+      });
+
+      navLines.forEach(line => {
+        line.classList.toggle('nav-line-active', line.dataset.section === currentId);
+      });
+
+      navPopupItems.forEach(item => {
+        item.classList.toggle('active', item.dataset.section === currentId);
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveSection);
+    updateActiveSection();
+
+    // Fade in sections on scroll
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.section').forEach(section => {
+      fadeObserver.observe(section);
+    });
+  </script>
+</body>
+</html>
