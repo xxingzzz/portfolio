@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Map</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Caveat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <a href="index.html" class="site-logo">shae</a>
+    <nav class="site-nav">
+      <a href="index.html" class="nav-pill nav-pill-active">projects</a>
+      <a href="#" class="nav-pill">about me</a>
+    </nav>
+  </header>
+
+  <!-- Side Navigation -->
+  <nav class="side-nav" id="sideNav">
+    <div class="nav-lines">
+      <span class="nav-line" data-section="section-1"></span>
+      <span class="nav-line" data-section="section-2"></span>
+      <span class="nav-line" data-section="section-3"></span>
+    </div>
+
+    <div class="nav-popup" id="navPopup">
+      <a href="#" class="nav-popup-item">Top</a>
+      <a href="#section-1" class="nav-popup-item" data-section="section-1">Background</a>
+      <a href="#section-2" class="nav-popup-item" data-section="section-2">Insight</a>
+      <a href="#section-3" class="nav-popup-item" data-section="section-3">The Concept</a>
+    </div>
+  </nav>
+
+  <!-- Hero Image -->
+  <div class="hero-image">
+    <div class="project-cover-placeholder" style="width:100%;aspect-ratio:16/5;">
+      <span class="placeholder-label">The Map hero image</span>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero">
+    <p class="hero-date">2023</p>
+    <h1 class="hero-title">The Map: Is There a Better Way to Save and Find My Files?</h1>
+    <div class="hero-bottom">
+      <p class="hero-category">Concept Design / Desktop App</p>
+      <div class="hero-tags">
+        <span class="hero-tag">UX RESEARCH</span>
+        <span class="hero-tag">CONCEPT DESIGN</span>
+        <span class="hero-tag">TEAM PROJECT</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section 1: Background -->
+  <section class="section" id="section-1">
+    <div class="content-wrapper">
+      <h2 class="subtitle">Background</h2>
+
+      <div class="section-body">
+        <h3 class="title">
+          We All Have Files We Can't Find — Especially When We Need Them Most
+        </h3>
+        <p class="body-text">As design students, we juggle countless courses, assignments, and projects — each producing a flood of files across different formats and tools. Over time, our computers become cluttered with folders we barely remember naming and documents we can't relocate. The frustration peaks right before a deadline: <mark class="highlight-purple">we know the file exists somewhere, but we can't find it and don't know how to search for it.</mark> Is there a smarter way to store and retrieve files — one that works with how we actually think?</p>
+
+        <div class="img-row">
+          <div class="project-cover-placeholder" style="width:100%;aspect-ratio:16/9;">
+            <span class="placeholder-label">context illustration</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: How We Got Here -->
+  <section class="section" id="section-2">
+    <div class="content-wrapper">
+      <h2 class="subtitle">Insight</h2>
+
+      <div class="section-body">
+        <h3 class="title">
+          People Don't Need a Better Folder System — They Need a Proactive Assistant
+        </h3>
+        <p class="body-text">I interviewed five classmates with varying document management abilities. Despite their different skill levels, they shared the same frustrations around naming, categorizing, and searching. Everyone expressed a desire for their computer to take on some responsibility — <mark class="highlight-purple">not just a "bookshelf," but a more proactive assistant that helps recall information intuitively.</mark></p>
+
+        <div class="img-row img-row-2">
+          <img src="images/The map/IMG_9987 1.png" alt="Ideation sketches - group 1" class="section-img">
+          <img src="images/The map/IMG_9988 1.png" alt="Ideation sketches - group 2" class="section-img">
+        </div>
+
+        <p class="body-text">Together, we ran an ideation session and converged on a direction: combining a visual digital map with AI assistance. We tested four concept directions with users — and the feedback pointed clearly toward one winner.</p>
+
+        <img src="images/The map/999.png" alt="Digital Map concept - the winning direction" class="section-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: The Concept -->
+  <section class="section section-visual" id="section-3">
+    <div class="content-wrapper">
+      <h2 class="subtitle">The Concept</h2>
+
+      <div class="section-body">
+        <div class="subsection">
+          <h3 class="title">The Map — An AI-Powered Visual File Assistant</h3>
+          <p class="body-text">The Map reimagines file management as an interactive, spatial experience. Instead of digging through nested folders or typing exact file names, users navigate a visual map where files are organized by context, association, and recency — the way our memory actually works.</p>
+        </div>
+
+        <!-- Feature 1 -->
+        <div class="feature-row">
+          <div class="feature-phone">
+            <div class="phone-placeholder">
+              <span class="placeholder-label">auto-categorization with cards</span>
+            </div>
+          </div>
+          <div class="feature-text">
+            <p class="feature-label">Proactive organization</p>
+            <h3 class="feature-title">AI auto-categorizes your files into visual cards</h3>
+            <p class="body-text">When you save a file, AI automatically suggests categories and creates card entries on your map — no manual sorting needed.</p>
+            <ul class="body-text">
+              <li>Auto-prompted categorization</li>
+              <li>Visual card-based file entries</li>
+              <li>AI-generated tags and filters</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-row">
+          <div class="feature-phone">
+            <div class="phone-placeholder">
+              <span class="placeholder-label">interactive search on map</span>
+            </div>
+          </div>
+          <div class="feature-text">
+            <p class="feature-label">Intuitive retrieval</p>
+            <h3 class="feature-title">Search by exploring, not just typing</h3>
+            <p class="body-text">Instead of recalling exact file names, users navigate the map spatially. AI proactively suggests search paths and surfaces related files based on context.</p>
+            <ul class="body-text">
+              <li>AI-prompted search suggestions</li>
+              <li>Context-based file surfacing</li>
+              <li>Filter by media format, time, and topic</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-row">
+          <div class="feature-phone">
+            <div class="phone-placeholder">
+              <span class="placeholder-label">digital map overview</span>
+            </div>
+          </div>
+          <div class="feature-text">
+            <p class="feature-label">See the big picture</p>
+            <h3 class="feature-title">A living map that grows with your files</h3>
+            <p class="body-text">The digital map provides a bird's-eye view of all your documents, visually clustered by relationship. It evolves as you add files, making your entire archive feel navigable and alive.</p>
+            <ul class="body-text">
+              <li>Spatial overview of all files</li>
+              <li>Visual clustering by association</li>
+              <li>Interactive zoom and explore</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p class="footer-text">I am happy to meet you :)</p>
+    <div class="footer-links">
+      <a href="#" class="footer-link">Linkedin</a>
+      <a href="#" class="footer-link">Instagram</a>
+      <a href="#" class="footer-link">Email</a>
+    </div>
+  </footer>
+
+  <script>
+    // Highlight active section on scroll
+    const sections = document.querySelectorAll('.section');
+    const navLines = document.querySelectorAll('.nav-line');
+    const navPopupItems = document.querySelectorAll('.nav-popup-item');
+
+    function updateActiveSection() {
+      let currentId = '';
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 200) {
+          currentId = section.id;
+        }
+      });
+
+      navLines.forEach(line => {
+        line.classList.toggle('nav-line-active', line.dataset.section === currentId);
+      });
+
+      navPopupItems.forEach(item => {
+        item.classList.toggle('active', item.dataset.section === currentId);
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveSection);
+    updateActiveSection();
+
+    // Fade in sections on scroll
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.section').forEach(section => {
+      fadeObserver.observe(section);
+    });
+  </script>
+</body>
+</html>

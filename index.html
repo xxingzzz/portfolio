@@ -13,26 +13,57 @@
 
   <!-- Header -->
   <header class="site-header">
-    <p class="site-logo">shae</p>
+    <a href="index.html" class="site-logo">shae</a>
     <nav class="site-nav">
-      <a href="index.html" class="nav-pill nav-pill-active">Projects</a>
-      <a href="#" class="nav-pill">About Me</a>
-      <a href="#" class="nav-pill">Resume</a>
+      <a href="index.html" class="nav-pill nav-pill-active">projects</a>
+      <a href="#" class="nav-pill">work</a>
+      <a href="#" class="nav-pill">about me</a>
     </nav>
   </header>
 
-  <!-- Hero Intro -->
-  <section class="home-hero">
-    <p class="home-hero-text">
-      Hi, I'm Shae —a Product Designer. For me, the journey began with learning to build
-      <span class="highlight-word">empathy</span> and approach complex problems
-      with a systematic mindset. That process helped me find
-      <span class="highlight-word">clarity</span> in chaos and gave
-      me the strength to become the person I've always wanted to be. Today, I create with
-      the hope of giving that same sense of
-      <span class="highlight-word highlight-circle">empowerment</span> to others. <span class="deco-smiley">:·)</span>
-    </p>
-    <span class="deco-star">✦</span>
+  <!-- Bento Photo Gallery (hidden for testing)
+  <section class="bento-gallery">
+    <div class="bento-grid" id="bentoGrid"></div>
+  </section>
+
+  <script src="gallery-config.js"></script>
+  <script>
+    (function() {
+      const grid = document.getElementById('bentoGrid');
+      const cellCount = 6;
+      const wideIndices = [0, 5];
+      const shuffled = [...GALLERY_IMAGES].sort(() => Math.random() - 0.5);
+      const cells = Array.from({ length: cellCount }, () => []);
+      shuffled.forEach((img, i) => { cells[i % cellCount].push(img); });
+      cells.forEach((imgs, i) => {
+        const cell = document.createElement('div');
+        cell.className = 'bento-cell' + (wideIndices.includes(i) ? ' bento-wide' : '');
+        imgs.forEach((src, j) => {
+          const imgEl = document.createElement('img');
+          imgEl.src = 'gallery/' + src;
+          imgEl.className = 'bento-img' + (j === 0 ? ' active' : '');
+          imgEl.alt = '';
+          cell.appendChild(imgEl);
+        });
+        grid.appendChild(cell);
+        if (imgs.length > 1) {
+          let current = 0;
+          setInterval(() => {
+            cell.children[current].classList.remove('active');
+            current = (current + 1) % imgs.length;
+            cell.children[current].classList.add('active');
+          }, 10000);
+        }
+      });
+    })();
+  </script>
+  -->
+
+  <!-- Intro Text -->
+  <section class="home-intro">
+    <p class="home-intro-text"><strong>i'm shae, a product designer.</strong></p>
+    <p class="home-intro-text">i believe good design disappears — so people spend less time figuring out how, and more time living why.</p>
+    <p class="home-mood">💖🪽🍋💫🍃☁️ ++))<<!!</p>
   </section>
 
   <!-- Projects Grid -->
@@ -41,34 +72,24 @@
 
       <a href="stepup.html" class="project-card">
         <div class="project-cover">
-          <div class="project-cover-placeholder">
-            <span class="placeholder-label">Vibsic cover</span>
-          </div>
+          <img src="images/Frame 1000006307.png" alt="StepUp app screens" class="project-cover-img">
         </div>
-        <h3 class="project-title">Vibsic</h3>
-        <p class="project-desc">A mobile app helps people with prolonged sitting to get active by unlock the micro physical activities at anywhere and anytime.</p>
+        <h3 class="project-title">Why is it still so hard to start moving — even when we know the risks of sitting and that exercise is the answer?</h3>
+        <p class="project-desc">StepUp — a mobile app that helps people with prolonged sitting get active by unlocking micro physical activities anytime and anywhere.</p>
         <div class="project-meta">
-          <div class="project-tags">
-            <span class="project-tag">PERSONAL</span>
-            <span class="project-tag">PROJECT</span>
-          </div>
-          <span class="project-year">2021</span>
+          <span class="project-year">2023</span>
         </div>
       </a>
 
-      <a href="#" class="project-card">
+      <a href="mindmap.html" class="project-card">
         <div class="project-cover">
           <div class="project-cover-placeholder">
             <span class="placeholder-label">MindMap cover</span>
           </div>
         </div>
-        <h3 class="project-title">MindMap</h3>
-        <p class="project-desc">A mobile app helps people with prolonged sitting to get active by unlock the micro physical activities at anywhere and anytime.</p>
+        <h3 class="project-title">Why can't I ever find my files — even though I just saved them?</h3>
+        <p class="project-desc">MindMap — rethinking how people organize and retrieve documents on their computers, making file management intuitive and effortless.</p>
         <div class="project-meta">
-          <div class="project-tags">
-            <span class="project-tag">PERSONAL</span>
-            <span class="project-tag">PROJECT</span>
-          </div>
           <span class="project-year">2023</span>
         </div>
       </a>
@@ -76,17 +97,26 @@
       <a href="#" class="project-card">
         <div class="project-cover">
           <div class="project-cover-placeholder">
-            <span class="placeholder-label">Jennifer Anns Group cover</span>
+            <span class="placeholder-label">VibSync cover</span>
           </div>
         </div>
-        <h3 class="project-title">Jennifer Anns Group</h3>
-        <p class="project-desc">A mobile app helps people with prolonged sitting to get active by unlock the micro physical activities at anywhere and anytime.</p>
+        <h3 class="project-title">Do music listeners actually want AI in their lives — and if so, how?</h3>
+        <p class="project-desc">VibSync — exploring whether and how AI can meaningfully participate in people's music listening experience.</p>
         <div class="project-meta">
-          <div class="project-tags">
-            <span class="project-tag">NON-PROFIT</span>
-            <span class="project-tag">OVERVIEW</span>
+          <span class="project-year">2023</span>
+        </div>
+      </a>
+
+      <a href="#" class="project-card">
+        <div class="project-cover">
+          <div class="project-cover-placeholder">
+            <span class="placeholder-label">EcoFin cover</span>
           </div>
-          <span class="project-year">2024</span>
+        </div>
+        <h3 class="project-title">Using the internet produces carbon emissions — how can we browse more sustainably?</h3>
+        <p class="project-desc">EcoFin — helping users become aware of and reduce the carbon footprint of their everyday internet usage.</p>
+        <div class="project-meta">
+          <span class="project-year">2022</span>
         </div>
       </a>
 
@@ -96,48 +126,10 @@
             <span class="placeholder-label">Vibsic cover</span>
           </div>
         </div>
-        <h3 class="project-title">Vibsic</h3>
-        <p class="project-desc">A mobile app helps people with prolonged sitting to get active by unlock the micro physical activities at anywhere and anytime.</p>
+        <h3 class="project-title">Indie musicians want to be heard, listeners want fresh sounds — how do we bridge the gap?</h3>
+        <p class="project-desc">Vibsic — connecting independent musicians with listeners who crave new and unconventional music.</p>
         <div class="project-meta">
-          <div class="project-tags">
-            <span class="project-tag">PERSONAL</span>
-            <span class="project-tag">PROJECT</span>
-          </div>
           <span class="project-year">2021</span>
-        </div>
-      </a>
-
-      <a href="#" class="project-card">
-        <div class="project-cover">
-          <div class="project-cover-placeholder">
-            <span class="placeholder-label">MindMap cover</span>
-          </div>
-        </div>
-        <h3 class="project-title">MindMap</h3>
-        <p class="project-desc">A mobile app helps people with prolonged sitting to get active by unlock the micro physical activities at anywhere and anytime.</p>
-        <div class="project-meta">
-          <div class="project-tags">
-            <span class="project-tag">PERSONAL</span>
-            <span class="project-tag">PROJECT</span>
-          </div>
-          <span class="project-year">2023</span>
-        </div>
-      </a>
-
-      <a href="#" class="project-card">
-        <div class="project-cover">
-          <div class="project-cover-placeholder">
-            <span class="placeholder-label">Jennifer Anns Group cover</span>
-          </div>
-        </div>
-        <h3 class="project-title">Jennifer Anns Group</h3>
-        <p class="project-desc">A mobile app helps people with prolonged sitting to get active by unlock the micro physical activities at anywhere and anytime.</p>
-        <div class="project-meta">
-          <div class="project-tags">
-            <span class="project-tag">NON-PROFIT</span>
-            <span class="project-tag">OVERVIEW</span>
-          </div>
-          <span class="project-year">2024</span>
         </div>
       </a>
 
@@ -146,13 +138,38 @@
 
   <!-- Footer -->
   <footer class="site-footer">
-    <p class="footer-text">I am happy to meet you :)</p>
+    <p class="footer-text" id="footerText">I am happy to meet you :)</p>
     <div class="footer-links">
       <a href="#" class="footer-link">Linkedin</a>
       <a href="#" class="footer-link">Instagram</a>
       <a href="#" class="footer-link">Email</a>
     </div>
   </footer>
+
+  <script>
+    const footerPhrases = [
+      'I am happy to meet you :)',
+      'have a beautiful day ~',
+      'keep positive, keep moving',
+      'small steps lead to big changes',
+      'be kind to yourself today',
+      "you're doing great, keep going",
+      'stay curious, stay creative',
+      'take a deep breath and smile',
+      'design with heart, live with joy',
+      'every day is a fresh start'
+    ];
+    let footerIndex = 0;
+    const footerEl = document.getElementById('footerText');
+    setInterval(() => {
+      footerEl.style.opacity = 0;
+      setTimeout(() => {
+        footerIndex = (footerIndex + 1) % footerPhrases.length;
+        footerEl.textContent = footerPhrases[footerIndex];
+        footerEl.style.opacity = 1;
+      }, 400);
+    }, 3000);
+  </script>
 
 </body>
 </html>
