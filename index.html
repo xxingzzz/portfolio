@@ -16,7 +16,6 @@
     <a href="index.html" class="site-logo">shae</a>
     <nav class="site-nav">
       <a href="index.html" class="nav-pill nav-pill-active">projects</a>
-      <a href="#" class="nav-pill">work</a>
       <a href="#" class="nav-pill">about me</a>
     </nav>
   </header>
@@ -70,66 +69,39 @@
   <section class="projects">
     <div class="projects-grid">
 
-      <a href="stepup.html" class="project-card">
-        <div class="project-cover">
-          <img src="images/Frame 1000006307.png" alt="StepUp app screens" class="project-cover-img">
-        </div>
-        <h3 class="project-title">Why is it still so hard to start moving — even when we know the risks of sitting and that exercise is the answer?</h3>
-        <p class="project-desc">StepUp — a mobile app that helps people with prolonged sitting get active by unlocking micro physical activities anytime and anywhere.</p>
-        <div class="project-meta">
-          <span class="project-year">2023</span>
-        </div>
-      </a>
-
-      <a href="mindmap.html" class="project-card">
-        <div class="project-cover">
-          <div class="project-cover-placeholder">
-            <span class="placeholder-label">MindMap cover</span>
-          </div>
-        </div>
-        <h3 class="project-title">Why can't I ever find my files — even though I just saved them?</h3>
-        <p class="project-desc">MindMap — rethinking how people organize and retrieve documents on their computers, making file management intuitive and effortless.</p>
-        <div class="project-meta">
-          <span class="project-year">2023</span>
-        </div>
-      </a>
-
       <a href="vibesync.html" class="project-card">
         <div class="project-cover">
-          <img src="vibesync/cover2.png" alt="VibeSync app screens" class="project-cover-img">
+          <video autoplay loop muted playsinline class="project-cover-img">
+            <source src="vibesync/cover-2.mov" type="video/mp4">
+          </video>
         </div>
-        <h3 class="project-title">Do music listeners actually want AI in their lives — and if so, how?</h3>
-        <p class="project-desc">VibeSync — exploring whether and how AI can meaningfully participate in people's music listening experience.</p>
+        <h3 class="project-title">Do music listeners actually want AI in their lives?</h3>
+        <p class="project-desc">Exploring how AI can meaningfully join people's music experience.</p>
+        <div class="project-meta">
+          <span class="project-year">2025</span>
+        </div>
+      </a>
+
+      <a href="stepup.html" class="project-card">
+        <div class="project-cover stepup-carousel">
+          <video autoplay loop muted playsinline class="project-cover-img carousel-video active">
+            <source src="video11.mov" type="video/mp4">
+          </video>
+          <video autoplay loop muted playsinline class="project-cover-img carousel-video">
+            <source src="video3.mov" type="video/mp4">
+          </video>
+          <video autoplay loop muted playsinline class="project-cover-img carousel-video">
+            <source src="video2.mov" type="video/mp4">
+          </video>
+        </div>
+        <h3 class="project-title">Why is it still so hard to start moving?</h3>
+        <p class="project-desc">Helping people with prolonged sitting get active, anytime and anywhere.</p>
         <div class="project-meta">
           <span class="project-year">2023</span>
         </div>
       </a>
 
-      <a href="#" class="project-card">
-        <div class="project-cover">
-          <div class="project-cover-placeholder">
-            <span class="placeholder-label">EcoFin cover</span>
-          </div>
-        </div>
-        <h3 class="project-title">Using the internet produces carbon emissions — how can we browse more sustainably?</h3>
-        <p class="project-desc">EcoFin — helping users become aware of and reduce the carbon footprint of their everyday internet usage.</p>
-        <div class="project-meta">
-          <span class="project-year">2022</span>
-        </div>
-      </a>
-
-      <a href="#" class="project-card">
-        <div class="project-cover">
-          <div class="project-cover-placeholder">
-            <span class="placeholder-label">Vibsic cover</span>
-          </div>
-        </div>
-        <h3 class="project-title">Indie musicians want to be heard, listeners want fresh sounds — how do we bridge the gap?</h3>
-        <p class="project-desc">Vibsic — connecting independent musicians with listeners who crave new and unconventional music.</p>
-        <div class="project-meta">
-          <span class="project-year">2021</span>
-        </div>
-      </a>
+      <!-- More projects coming soon -->
 
     </div>
   </section>
@@ -145,6 +117,34 @@
   </footer>
 
   <script>
+    // Fade in project cards after intro
+    const cards = document.querySelectorAll('.project-card');
+    const cardObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const index = Array.from(cards).indexOf(entry.target);
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, 100 + index * 100);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    cards.forEach(card => {
+      cardObserver.observe(card);
+    });
+
+    // StepUp video carousel
+    const carouselVideos = document.querySelectorAll('.stepup-carousel .carousel-video');
+    if (carouselVideos.length > 1) {
+      let current = 0;
+      setInterval(() => {
+        carouselVideos[current].classList.remove('active');
+        current = (current + 1) % carouselVideos.length;
+        carouselVideos[current].classList.add('active');
+      }, 4000);
+    }
+
     const footerPhrases = [
       'I am happy to meet you :)',
       'have a beautiful day ~',
